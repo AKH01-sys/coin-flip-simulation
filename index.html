@@ -8,11 +8,17 @@
 </head>
 <body>
     <h1>Coin Flip Simulation</h1>
-    <label for="probability">Probability of heads for 200 coins (0 to 1):</label>
-    <input type="number" id="probability" step="0.01" value="0.5" min="0" max="1">
+    <label for="probability200">Probability of heads for 2X coins (0 to 1):</label>
+    <input type="number" id="probability200" step="0.01" value="0.5" min="0" max="1"><br>
+    <label for="probability100">Probability of heads for X coins (0 to 1):</label>
+    <input type="number" id="probability100" step="0.01" value="1" min="0" max="1"><br>
+    <label for="numSimulations">Number of simulations:</label>
+    <input type="number" id="numSimulations" value="10000" min="1"><br>
     <button onclick="runSimulation()">Run Simulation</button>
     <div id="results"></div>
-
+    <footer>
+        <p>This simulation compares the number of heads obtained by tossing 2X coins with a given probability and X coins with a given probability. The winner is determined by who gets the most heads after all coins are tossed.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
